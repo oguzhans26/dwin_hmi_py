@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dwin_hmi_py"
+version = "0.1.0"
+description = "Python library for DWIN DGUS HMI serial interface"
+authors = [
+  { name="Oğuzhan Sezgin"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text="MIT" }
+dependencies = [
+  "pyserial>=3.4"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
